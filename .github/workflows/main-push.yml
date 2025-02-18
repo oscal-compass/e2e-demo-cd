@@ -8,15 +8,15 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true
         fetch-depth: 0
-        token: ${{ secrets.GIT_TOKEN }}
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Install Trestle
       run: bash scripts/automation/install_trestle.sh
     - name: Release
@@ -34,7 +34,7 @@ jobs:
     steps:
     - uses: tukasz/direct-merge-action@master
       with:
-        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         source-branch: main
         target-branch: develop
         commit-message: "chore: Merge back version tags and changelog into develop."

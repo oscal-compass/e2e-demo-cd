@@ -3,20 +3,26 @@ on:
   push:
     branches:
       - develop
+
+permissions:
+  contents: write  # Allows write access to repository content
+  issues: write    # Allows write access to issues (if needed)
+  pull-requests: write  # Allows write access to pull requests (if needed)
+
 jobs:
   auto-content-update:
     name: Autoupdate content
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true
         fetch-depth: 2
-        token: ${{ secrets.GIT_TOKEN }}
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Install Trestle
       run: bash scripts/automation/install_trestle.sh
     - name: Automatically update content on push
