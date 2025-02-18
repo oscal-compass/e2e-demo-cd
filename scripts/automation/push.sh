@@ -27,14 +27,11 @@ function github-branch-commit() {
         return 1
     fi
 
-    if ! git add system-security-plans; then
+    if ! git add assessment-results; then
         err "failed to add modified files to git index"
         return 1
     fi
-    if ! git add md_ssp; then
-        err "failed to add modified files to git index"
-        return 1
-    fi
+    
     if [ -z "$(git status --porcelain)" ]; then 
         msg "Nothing to commit" 
         return 0 
@@ -59,8 +56,8 @@ function github-branch-commit() {
     fi
     
     local remote=origin
-    if [[ $GIT_TOKEN ]]; then
-        remote=https://$GIT_TOKEN@github.com/ComplianceAsCode/ocp-oscal-ssp
+    if [[ $GITHUB_TOKEN ]]; then
+        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-audit-posture
     fi
     if [[ $GIT_BRANCH != main ]] && [[ $GIT_BRANCH != develop ]]; then
         msg "not pushing updates to branch $GIT_BRANCH"
