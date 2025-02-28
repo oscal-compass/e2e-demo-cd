@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "ac96840a-6675-4338-b218-c0d72a9dd53f",
+    "uuid": "ccce06b5-41c7-4380-ad82-fd7564b7ee96",
     "metadata": {
       "title": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-      "last-modified": "2025-02-28T19:21:52+00:00",
+      "last-modified": "2025-02-28T19:25:18+00:00",
       "version": "1.0.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
-        "uuid": "6f959524-59d2-4486-b094-eb335a562eef",
+        "uuid": "73c86b4f-b4ee-49ca-9b30-aaf856e5bf0d",
         "type": "validation",
         "title": "NIST 800-53 Ubuntu Linux 24.04 LTS",
         "description": "NIST 800-53 Ubuntu Linux 24.04 LTS",
@@ -17,2282 +17,1682 @@
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "account_disable_post_pw_expiration",
-            "remarks": "rule_set_00"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "account_disable_post_pw_expiration",
-            "remarks": "rule_set_00"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure inactive password lock is configured (Automated)",
-            "remarks": "rule_set_00"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_00"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_maximum_age_login_defs",
-            "remarks": "rule_set_01"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_maximum_age_login_defs",
-            "remarks": "rule_set_01"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure password expiration is configured (Automated)",
-            "remarks": "rule_set_01"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_01"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_minimum_age_login_defs",
-            "remarks": "rule_set_02"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_minimum_age_login_defs",
-            "remarks": "rule_set_02"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure minimum password days is configured (Manual)",
-            "remarks": "rule_set_02"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_02"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_last_change_is_in_past",
-            "remarks": "rule_set_03"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_last_change_is_in_past",
-            "remarks": "rule_set_03"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure all users last password change date is in the past (Automated)",
-            "remarks": "rule_set_03"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_03"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_dcredit",
-            "remarks": "rule_set_04"
+            "remarks": "rule_set_00"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_dcredit",
-            "remarks": "rule_set_04"
+            "remarks": "rule_set_00"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_04"
+            "remarks": "rule_set_00"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_04"
+            "remarks": "rule_set_00"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_dictcheck",
-            "remarks": "rule_set_05"
+            "remarks": "rule_set_01"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_dictcheck",
-            "remarks": "rule_set_05"
+            "remarks": "rule_set_01"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password dictionary check is enabled (Automated)",
-            "remarks": "rule_set_05"
+            "remarks": "rule_set_01"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_05"
+            "remarks": "rule_set_01"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_difok",
-            "remarks": "rule_set_06"
+            "remarks": "rule_set_02"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_difok",
-            "remarks": "rule_set_06"
+            "remarks": "rule_set_02"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password number of changed characters is configured (Automated)",
-            "remarks": "rule_set_06"
+            "remarks": "rule_set_02"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_06"
+            "remarks": "rule_set_02"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_enforce_root",
-            "remarks": "rule_set_07"
+            "remarks": "rule_set_03"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_enforce_root",
-            "remarks": "rule_set_07"
+            "remarks": "rule_set_03"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password quality is enforced for the root user (Automated)",
-            "remarks": "rule_set_07"
+            "remarks": "rule_set_03"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_07"
+            "remarks": "rule_set_03"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_enforcing",
-            "remarks": "rule_set_08"
+            "remarks": "rule_set_04"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_enforcing",
-            "remarks": "rule_set_08"
+            "remarks": "rule_set_04"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password quality checking is enforced (Automated)",
-            "remarks": "rule_set_08"
+            "remarks": "rule_set_04"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_08"
+            "remarks": "rule_set_04"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_lcredit",
-            "remarks": "rule_set_09"
+            "remarks": "rule_set_05"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_lcredit",
-            "remarks": "rule_set_09"
+            "remarks": "rule_set_05"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_09"
+            "remarks": "rule_set_05"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_09"
+            "remarks": "rule_set_05"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_maxrepeat",
-            "remarks": "rule_set_10"
+            "remarks": "rule_set_06"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_maxrepeat",
-            "remarks": "rule_set_10"
+            "remarks": "rule_set_06"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password same consecutive characters is configured (Automated)",
-            "remarks": "rule_set_10"
+            "remarks": "rule_set_06"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_10"
+            "remarks": "rule_set_06"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_maxsequence",
-            "remarks": "rule_set_11"
+            "remarks": "rule_set_07"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_maxsequence",
-            "remarks": "rule_set_11"
+            "remarks": "rule_set_07"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password maximum sequential characters is configured (Automated)",
-            "remarks": "rule_set_11"
+            "remarks": "rule_set_07"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_11"
+            "remarks": "rule_set_07"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_minclass",
-            "remarks": "rule_set_12"
+            "remarks": "rule_set_08"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_minclass",
-            "remarks": "rule_set_12"
+            "remarks": "rule_set_08"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_12"
+            "remarks": "rule_set_08"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_12"
+            "remarks": "rule_set_08"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_minlen",
-            "remarks": "rule_set_13"
+            "remarks": "rule_set_09"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_minlen",
-            "remarks": "rule_set_13"
+            "remarks": "rule_set_09"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure minimum password length is configured (Automated)",
-            "remarks": "rule_set_13"
+            "remarks": "rule_set_09"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_13"
+            "remarks": "rule_set_09"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_ocredit",
-            "remarks": "rule_set_14"
+            "remarks": "rule_set_10"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_ocredit",
-            "remarks": "rule_set_14"
+            "remarks": "rule_set_10"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_14"
+            "remarks": "rule_set_10"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_14"
+            "remarks": "rule_set_10"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_enabled",
-            "remarks": "rule_set_15"
+            "remarks": "rule_set_11"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_enabled",
-            "remarks": "rule_set_15"
+            "remarks": "rule_set_11"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_pwhistory module is enabled (Automated)",
-            "remarks": "rule_set_15"
+            "remarks": "rule_set_11"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_15"
+            "remarks": "rule_set_11"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_enforce_root",
-            "remarks": "rule_set_16"
+            "remarks": "rule_set_12"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_enforce_root",
-            "remarks": "rule_set_16"
+            "remarks": "rule_set_12"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password history is enforced for the root user (Automated)",
-            "remarks": "rule_set_16"
+            "remarks": "rule_set_12"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_16"
+            "remarks": "rule_set_12"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_remember",
-            "remarks": "rule_set_17"
+            "remarks": "rule_set_13"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_remember",
-            "remarks": "rule_set_17"
+            "remarks": "rule_set_13"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password history remember is configured (Automated)",
-            "remarks": "rule_set_17"
+            "remarks": "rule_set_13"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_17"
+            "remarks": "rule_set_13"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_use_authtok",
-            "remarks": "rule_set_18"
+            "remarks": "rule_set_14"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwhistory_use_authtok",
-            "remarks": "rule_set_18"
+            "remarks": "rule_set_14"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_pwhistory includes use_authtok (Automated)",
-            "remarks": "rule_set_18"
+            "remarks": "rule_set_14"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_18"
+            "remarks": "rule_set_14"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwquality_enabled",
-            "remarks": "rule_set_19"
+            "remarks": "rule_set_15"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_pwquality_enabled",
-            "remarks": "rule_set_19"
+            "remarks": "rule_set_15"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_pwquality module is enabled (Automated)",
-            "remarks": "rule_set_19"
+            "remarks": "rule_set_15"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_19"
+            "remarks": "rule_set_15"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_ucredit",
-            "remarks": "rule_set_20"
+            "remarks": "rule_set_16"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_ucredit",
-            "remarks": "rule_set_20"
+            "remarks": "rule_set_16"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_20"
+            "remarks": "rule_set_16"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_20"
+            "remarks": "rule_set_16"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_authtok",
-            "remarks": "rule_set_21"
+            "remarks": "rule_set_17"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_authtok",
-            "remarks": "rule_set_21"
+            "remarks": "rule_set_17"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix includes use_authtok (Automated)",
-            "remarks": "rule_set_21"
+            "remarks": "rule_set_17"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_21"
+            "remarks": "rule_set_17"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_enabled",
-            "remarks": "rule_set_22"
+            "remarks": "rule_set_18"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_enabled",
-            "remarks": "rule_set_22"
+            "remarks": "rule_set_18"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix module is enabled (Automated)",
-            "remarks": "rule_set_22"
+            "remarks": "rule_set_18"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_22"
+            "remarks": "rule_set_18"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_no_remember",
-            "remarks": "rule_set_23"
+            "remarks": "rule_set_19"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_password_pam_unix_no_remember",
-            "remarks": "rule_set_23"
+            "remarks": "rule_set_19"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix does not include remember (Automated)",
-            "remarks": "rule_set_23"
+            "remarks": "rule_set_19"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_23"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_set_max_life_existing",
-            "remarks": "rule_set_24"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_set_max_life_existing",
-            "remarks": "rule_set_24"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure password expiration is configured (Automated)",
-            "remarks": "rule_set_24"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_24"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_set_min_life_existing",
-            "remarks": "rule_set_25"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_set_min_life_existing",
-            "remarks": "rule_set_25"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure minimum password days is configured (Manual)",
-            "remarks": "rule_set_25"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_25"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_warn_age_login_defs",
-            "remarks": "rule_set_26"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_password_warn_age_login_defs",
-            "remarks": "rule_set_26"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure password expiration warning days is configured (Automated)",
-            "remarks": "rule_set_26"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_26"
+            "remarks": "rule_set_19"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_deny",
-            "remarks": "rule_set_27"
+            "remarks": "rule_set_20"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_deny",
-            "remarks": "rule_set_27"
+            "remarks": "rule_set_20"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password failed attempts lockout is configured (Automated)",
-            "remarks": "rule_set_27"
+            "remarks": "rule_set_20"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_27"
+            "remarks": "rule_set_20"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_enabled",
-            "remarks": "rule_set_28"
+            "remarks": "rule_set_21"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_enabled",
-            "remarks": "rule_set_28"
+            "remarks": "rule_set_21"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_faillock module is enabled (Automated)",
-            "remarks": "rule_set_28"
+            "remarks": "rule_set_21"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_28"
+            "remarks": "rule_set_21"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_root_unlock_time",
-            "remarks": "rule_set_29"
+            "remarks": "rule_set_22"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_root_unlock_time",
-            "remarks": "rule_set_29"
+            "remarks": "rule_set_22"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password failed attempts lockout includes root account (Automated)",
-            "remarks": "rule_set_29"
+            "remarks": "rule_set_22"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_29"
+            "remarks": "rule_set_22"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_unlock_time",
-            "remarks": "rule_set_30"
+            "remarks": "rule_set_23"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "accounts_passwords_pam_faillock_unlock_time",
-            "remarks": "rule_set_30"
+            "remarks": "rule_set_23"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password unlock time is configured (Automated)",
-            "remarks": "rule_set_30"
+            "remarks": "rule_set_23"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_30"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_root_gid_zero",
-            "remarks": "rule_set_31"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_root_gid_zero",
-            "remarks": "rule_set_31"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure root is the only GID 0 account (Automated)",
-            "remarks": "rule_set_31"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_31"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_tmout",
-            "remarks": "rule_set_32"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_tmout",
-            "remarks": "rule_set_32"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user shell timeout is configured (Automated)",
-            "remarks": "rule_set_32"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_32"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_bashrc",
-            "remarks": "rule_set_33"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_bashrc",
-            "remarks": "rule_set_33"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user umask is configured (Automated)",
-            "remarks": "rule_set_33"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_33"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_login_defs",
-            "remarks": "rule_set_34"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_login_defs",
-            "remarks": "rule_set_34"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user umask is configured (Automated)",
-            "remarks": "rule_set_34"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_34"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_profile",
-            "remarks": "rule_set_35"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_etc_profile",
-            "remarks": "rule_set_35"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user umask is configured (Automated)",
-            "remarks": "rule_set_35"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_35"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_root",
-            "remarks": "rule_set_36"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "accounts_umask_root",
-            "remarks": "rule_set_36"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure root user umask is configured (Automated)",
-            "remarks": "rule_set_36"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_36"
+            "remarks": "rule_set_23"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "ensure_pam_wheel_group_empty",
-            "remarks": "rule_set_37"
+            "remarks": "rule_set_24"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "ensure_pam_wheel_group_empty",
-            "remarks": "rule_set_37"
+            "remarks": "rule_set_24"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure access to the su command is restricted (Automated)",
-            "remarks": "rule_set_37"
+            "remarks": "rule_set_24"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_37"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "ensure_root_access_controlled",
-            "remarks": "rule_set_38"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "ensure_root_access_controlled",
-            "remarks": "rule_set_38"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure root account access is controlled (Automated)",
-            "remarks": "rule_set_38"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_38"
+            "remarks": "rule_set_24"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_groupowner_sshd_config",
-            "remarks": "rule_set_39"
+            "remarks": "rule_set_25"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_groupowner_sshd_config",
-            "remarks": "rule_set_39"
+            "remarks": "rule_set_25"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure permissions on /etc/ssh/sshd_config are configured (Automated)",
-            "remarks": "rule_set_39"
+            "remarks": "rule_set_25"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_39"
+            "remarks": "rule_set_25"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_owner_sshd_config",
-            "remarks": "rule_set_40"
+            "remarks": "rule_set_26"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_owner_sshd_config",
-            "remarks": "rule_set_40"
+            "remarks": "rule_set_26"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure permissions on /etc/ssh/sshd_config are configured (Automated)",
-            "remarks": "rule_set_40"
+            "remarks": "rule_set_26"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_40"
+            "remarks": "rule_set_26"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_config",
-            "remarks": "rule_set_41"
+            "remarks": "rule_set_27"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_config",
-            "remarks": "rule_set_41"
+            "remarks": "rule_set_27"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure permissions on /etc/ssh/sshd_config are configured (Automated)",
-            "remarks": "rule_set_41"
+            "remarks": "rule_set_27"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_41"
+            "remarks": "rule_set_27"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_private_key",
-            "remarks": "rule_set_42"
+            "remarks": "rule_set_28"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_private_key",
-            "remarks": "rule_set_42"
+            "remarks": "rule_set_28"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure permissions on SSH private host key files are configured (Automated)",
-            "remarks": "rule_set_42"
+            "remarks": "rule_set_28"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_42"
+            "remarks": "rule_set_28"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_pub_key",
-            "remarks": "rule_set_43"
+            "remarks": "rule_set_29"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "file_permissions_sshd_pub_key",
-            "remarks": "rule_set_43"
+            "remarks": "rule_set_29"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure permissions on SSH public host key files are configured (Automated)",
-            "remarks": "rule_set_43"
+            "remarks": "rule_set_29"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_43"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "groups_no_zero_gid_except_root",
-            "remarks": "rule_set_44"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "groups_no_zero_gid_except_root",
-            "remarks": "rule_set_44"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure group root is the only GID 0 group (Automated)",
-            "remarks": "rule_set_44"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_44"
+            "remarks": "rule_set_29"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "no_empty_passwords_unix",
-            "remarks": "rule_set_45"
+            "remarks": "rule_set_30"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "no_empty_passwords_unix",
-            "remarks": "rule_set_45"
+            "remarks": "rule_set_30"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix does not include nullok (Automated)",
-            "remarks": "rule_set_45"
+            "remarks": "rule_set_30"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_45"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "no_invalid_shell_accounts_unlocked",
-            "remarks": "rule_set_46"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "no_invalid_shell_accounts_unlocked",
-            "remarks": "rule_set_46"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure accounts without a valid login shell are locked (Automated)",
-            "remarks": "rule_set_46"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_46"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "no_shelllogin_for_systemaccounts",
-            "remarks": "rule_set_47"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "no_shelllogin_for_systemaccounts",
-            "remarks": "rule_set_47"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure system accounts do not have a valid login shell (Automated)",
-            "remarks": "rule_set_47"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_47"
+            "remarks": "rule_set_30"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "package_sudo_installed",
-            "remarks": "rule_set_48"
+            "remarks": "rule_set_31"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "package_sudo_installed",
-            "remarks": "rule_set_48"
+            "remarks": "rule_set_31"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sudo is installed (Automated)",
-            "remarks": "rule_set_48"
+            "remarks": "rule_set_31"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_48"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "set_password_hashing_algorithm_logindefs",
-            "remarks": "rule_set_49"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "set_password_hashing_algorithm_logindefs",
-            "remarks": "rule_set_49"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure strong password hashing algorithm is configured (Automated)",
-            "remarks": "rule_set_49"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_49"
+            "remarks": "rule_set_31"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "set_password_hashing_algorithm_systemauth",
-            "remarks": "rule_set_50"
+            "remarks": "rule_set_32"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "set_password_hashing_algorithm_systemauth",
-            "remarks": "rule_set_50"
+            "remarks": "rule_set_32"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix includes a strong password hashing algorithm (Automated)",
-            "remarks": "rule_set_50"
+            "remarks": "rule_set_32"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_50"
+            "remarks": "rule_set_32"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_empty_passwords",
-            "remarks": "rule_set_51"
+            "remarks": "rule_set_33"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_empty_passwords",
-            "remarks": "rule_set_51"
+            "remarks": "rule_set_33"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd PermitEmptyPasswords is disabled (Automated)",
-            "remarks": "rule_set_51"
+            "remarks": "rule_set_33"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_51"
+            "remarks": "rule_set_33"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_forwarding",
-            "remarks": "rule_set_52"
+            "remarks": "rule_set_34"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_forwarding",
-            "remarks": "rule_set_52"
+            "remarks": "rule_set_34"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd DisableForwarding is enabled (Automated)",
-            "remarks": "rule_set_52"
+            "remarks": "rule_set_34"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_52"
+            "remarks": "rule_set_34"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_gssapi_auth",
-            "remarks": "rule_set_53"
+            "remarks": "rule_set_35"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_gssapi_auth",
-            "remarks": "rule_set_53"
+            "remarks": "rule_set_35"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd GSSAPIAuthentication is disabled (Automated)",
-            "remarks": "rule_set_53"
+            "remarks": "rule_set_35"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_53"
+            "remarks": "rule_set_35"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_rhosts",
-            "remarks": "rule_set_54"
+            "remarks": "rule_set_36"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_rhosts",
-            "remarks": "rule_set_54"
+            "remarks": "rule_set_36"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd IgnoreRhosts is enabled (Automated)",
-            "remarks": "rule_set_54"
+            "remarks": "rule_set_36"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_54"
+            "remarks": "rule_set_36"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_root_login",
-            "remarks": "rule_set_55"
+            "remarks": "rule_set_37"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_disable_root_login",
-            "remarks": "rule_set_55"
+            "remarks": "rule_set_37"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd PermitRootLogin is disabled (Automated)",
-            "remarks": "rule_set_55"
+            "remarks": "rule_set_37"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_55"
+            "remarks": "rule_set_37"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_enable_pam",
-            "remarks": "rule_set_56"
+            "remarks": "rule_set_38"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_enable_pam",
-            "remarks": "rule_set_56"
+            "remarks": "rule_set_38"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd UsePAM is enabled (Automated)",
-            "remarks": "rule_set_56"
+            "remarks": "rule_set_38"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_56"
+            "remarks": "rule_set_38"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_limit_user_access",
-            "remarks": "rule_set_57"
+            "remarks": "rule_set_39"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_limit_user_access",
-            "remarks": "rule_set_57"
+            "remarks": "rule_set_39"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd access is configured (Automated)",
-            "remarks": "rule_set_57"
+            "remarks": "rule_set_39"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_57"
+            "remarks": "rule_set_39"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_max_auth_tries_value=4",
-            "remarks": "rule_set_58"
+            "remarks": "rule_set_40"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_max_auth_tries_value=4",
-            "remarks": "rule_set_58"
+            "remarks": "rule_set_40"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd MaxAuthTries is configured (Automated)",
-            "remarks": "rule_set_58"
+            "remarks": "rule_set_40"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_58"
+            "remarks": "rule_set_40"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_set_loglevel_info",
-            "remarks": "rule_set_59"
+            "remarks": "rule_set_41"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_set_loglevel_info",
-            "remarks": "rule_set_59"
+            "remarks": "rule_set_41"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd LogLevel is configured (Automated)",
-            "remarks": "rule_set_59"
+            "remarks": "rule_set_41"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_59"
+            "remarks": "rule_set_41"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_set_max_auth_tries",
-            "remarks": "rule_set_60"
+            "remarks": "rule_set_42"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_set_max_auth_tries",
-            "remarks": "rule_set_60"
+            "remarks": "rule_set_42"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd MaxAuthTries is configured (Automated)",
-            "remarks": "rule_set_60"
+            "remarks": "rule_set_42"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_60"
+            "remarks": "rule_set_42"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_strong_kex=cis_ubuntu2404",
-            "remarks": "rule_set_61"
+            "remarks": "rule_set_43"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_strong_kex=cis_ubuntu2404",
-            "remarks": "rule_set_61"
+            "remarks": "rule_set_43"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd KexAlgorithms is configured (Automated)",
-            "remarks": "rule_set_61"
+            "remarks": "rule_set_43"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_61"
+            "remarks": "rule_set_43"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_strong_macs=cis_ubuntu2404",
-            "remarks": "rule_set_62"
+            "remarks": "rule_set_44"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_strong_macs=cis_ubuntu2404",
-            "remarks": "rule_set_62"
+            "remarks": "rule_set_44"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd MACs are configured (Automated)",
-            "remarks": "rule_set_62"
+            "remarks": "rule_set_44"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_62"
+            "remarks": "rule_set_44"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_ciphers",
-            "remarks": "rule_set_63"
+            "remarks": "rule_set_45"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_ciphers",
-            "remarks": "rule_set_63"
+            "remarks": "rule_set_45"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd Ciphers are configured (Automated)",
-            "remarks": "rule_set_63"
+            "remarks": "rule_set_45"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_63"
+            "remarks": "rule_set_45"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_kex",
-            "remarks": "rule_set_64"
+            "remarks": "rule_set_46"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_kex",
-            "remarks": "rule_set_64"
+            "remarks": "rule_set_46"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd KexAlgorithms is configured (Automated)",
-            "remarks": "rule_set_64"
+            "remarks": "rule_set_46"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_64"
+            "remarks": "rule_set_46"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_macs",
-            "remarks": "rule_set_65"
+            "remarks": "rule_set_47"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sshd_use_strong_macs",
-            "remarks": "rule_set_65"
+            "remarks": "rule_set_47"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sshd MACs are configured (Automated)",
-            "remarks": "rule_set_65"
+            "remarks": "rule_set_47"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_65"
+            "remarks": "rule_set_47"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_add_use_pty",
-            "remarks": "rule_set_66"
+            "remarks": "rule_set_48"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_add_use_pty",
-            "remarks": "rule_set_66"
+            "remarks": "rule_set_48"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sudo commands use pty (Automated)",
-            "remarks": "rule_set_66"
+            "remarks": "rule_set_48"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_66"
+            "remarks": "rule_set_48"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_custom_logfile",
-            "remarks": "rule_set_67"
+            "remarks": "rule_set_49"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_custom_logfile",
-            "remarks": "rule_set_67"
+            "remarks": "rule_set_49"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sudo log file exists (Automated)",
-            "remarks": "rule_set_67"
+            "remarks": "rule_set_49"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_67"
+            "remarks": "rule_set_49"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_remove_no_authenticate",
-            "remarks": "rule_set_68"
+            "remarks": "rule_set_50"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_remove_no_authenticate",
-            "remarks": "rule_set_68"
+            "remarks": "rule_set_50"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure re-authentication for privilege escalation is not disabled globally (Automated)",
-            "remarks": "rule_set_68"
+            "remarks": "rule_set_50"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_68"
+            "remarks": "rule_set_50"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_require_authentication",
-            "remarks": "rule_set_69"
+            "remarks": "rule_set_51"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_require_authentication",
-            "remarks": "rule_set_69"
+            "remarks": "rule_set_51"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure users must provide password for privilege escalation (Automated)",
-            "remarks": "rule_set_69"
+            "remarks": "rule_set_51"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_69"
+            "remarks": "rule_set_51"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_require_reauthentication",
-            "remarks": "rule_set_70"
+            "remarks": "rule_set_52"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "sudo_require_reauthentication",
-            "remarks": "rule_set_70"
+            "remarks": "rule_set_52"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sudo authentication timeout is configured correctly (Automated)",
-            "remarks": "rule_set_70"
+            "remarks": "rule_set_52"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_70"
+            "remarks": "rule_set_52"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "use_pam_wheel_group_for_su",
-            "remarks": "rule_set_71"
+            "remarks": "rule_set_53"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "use_pam_wheel_group_for_su",
-            "remarks": "rule_set_71"
+            "remarks": "rule_set_53"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure access to the su command is restricted (Automated)",
-            "remarks": "rule_set_71"
+            "remarks": "rule_set_53"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_71"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_account_disable_post_pw_expiration=45",
-            "remarks": "rule_set_72"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_account_disable_post_pw_expiration=45",
-            "remarks": "rule_set_72"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure inactive password lock is configured (Automated)",
-            "remarks": "rule_set_72"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_72"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_maximum_age_login_defs=365",
-            "remarks": "rule_set_73"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_maximum_age_login_defs=365",
-            "remarks": "rule_set_73"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure password expiration is configured (Automated)",
-            "remarks": "rule_set_73"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_73"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_minimum_age_login_defs=1",
-            "remarks": "rule_set_74"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_minimum_age_login_defs=1",
-            "remarks": "rule_set_74"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure minimum password days is configured (Manual)",
-            "remarks": "rule_set_74"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_74"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_password_warn_age_login_defs=7",
-            "remarks": "rule_set_75"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_password_warn_age_login_defs=7",
-            "remarks": "rule_set_75"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure password expiration warning days is configured (Automated)",
-            "remarks": "rule_set_75"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_75"
+            "remarks": "rule_set_53"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_accounts_passwords_pam_faillock_deny=4",
-            "remarks": "rule_set_76"
+            "remarks": "rule_set_54"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_accounts_passwords_pam_faillock_deny=4",
-            "remarks": "rule_set_76"
+            "remarks": "rule_set_54"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password failed attempts lockout is configured (Automated)",
-            "remarks": "rule_set_76"
+            "remarks": "rule_set_54"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_76"
+            "remarks": "rule_set_54"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_accounts_passwords_pam_faillock_unlock_time=900",
-            "remarks": "rule_set_77"
+            "remarks": "rule_set_55"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_accounts_passwords_pam_faillock_unlock_time=900",
-            "remarks": "rule_set_77"
+            "remarks": "rule_set_55"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password unlock time is configured (Automated); Ensure password failed attempts lockout includes root account (Automated)",
-            "remarks": "rule_set_77"
+            "remarks": "rule_set_55"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_77"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_tmout=15_min",
-            "remarks": "rule_set_78"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_tmout=15_min",
-            "remarks": "rule_set_78"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user shell timeout is configured (Automated)",
-            "remarks": "rule_set_78"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_78"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_user_umask=027",
-            "remarks": "rule_set_79"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_accounts_user_umask=027",
-            "remarks": "rule_set_79"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure default user umask is configured (Automated)",
-            "remarks": "rule_set_79"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_79"
+            "remarks": "rule_set_55"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_pam_wheel_group_for_su=cis",
-            "remarks": "rule_set_80"
+            "remarks": "rule_set_56"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_pam_wheel_group_for_su=cis",
-            "remarks": "rule_set_80"
+            "remarks": "rule_set_56"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure access to the su command is restricted (Automated)",
-            "remarks": "rule_set_80"
+            "remarks": "rule_set_56"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_80"
-          },
-          {
-            "name": "Rule_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_password_hashing_algorithm=cis_ubuntu2404",
-            "remarks": "rule_set_81"
-          },
-          {
-            "name": "Check_Id",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "var_password_hashing_algorithm=cis_ubuntu2404",
-            "remarks": "rule_set_81"
-          },
-          {
-            "name": "Check_Description",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "Ensure strong password hashing algorithm is configured (Automated)",
-            "remarks": "rule_set_81"
-          },
-          {
-            "name": "Target_Component",
-            "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
-            "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_81"
+            "remarks": "rule_set_56"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_hashing_algorithm_pam=yescrypt",
-            "remarks": "rule_set_82"
+            "remarks": "rule_set_57"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_hashing_algorithm_pam=yescrypt",
-            "remarks": "rule_set_82"
+            "remarks": "rule_set_57"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure pam_unix includes a strong password hashing algorithm (Automated)",
-            "remarks": "rule_set_82"
+            "remarks": "rule_set_57"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_82"
+            "remarks": "rule_set_57"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_dcredit=1",
-            "remarks": "rule_set_83"
+            "remarks": "rule_set_58"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_dcredit=1",
-            "remarks": "rule_set_83"
+            "remarks": "rule_set_58"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_83"
+            "remarks": "rule_set_58"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_83"
+            "remarks": "rule_set_58"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_dictcheck=1",
-            "remarks": "rule_set_84"
+            "remarks": "rule_set_59"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_dictcheck=1",
-            "remarks": "rule_set_84"
+            "remarks": "rule_set_59"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password dictionary check is enabled (Automated)",
-            "remarks": "rule_set_84"
+            "remarks": "rule_set_59"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_84"
+            "remarks": "rule_set_59"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_difok=2",
-            "remarks": "rule_set_85"
+            "remarks": "rule_set_60"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_difok=2",
-            "remarks": "rule_set_85"
+            "remarks": "rule_set_60"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password number of changed characters is configured (Automated)",
-            "remarks": "rule_set_85"
+            "remarks": "rule_set_60"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_85"
+            "remarks": "rule_set_60"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_enforcing=1",
-            "remarks": "rule_set_86"
+            "remarks": "rule_set_61"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_enforcing=1",
-            "remarks": "rule_set_86"
+            "remarks": "rule_set_61"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password quality checking is enforced (Automated)",
-            "remarks": "rule_set_86"
+            "remarks": "rule_set_61"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_86"
+            "remarks": "rule_set_61"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_lcredit=1",
-            "remarks": "rule_set_87"
+            "remarks": "rule_set_62"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_lcredit=1",
-            "remarks": "rule_set_87"
+            "remarks": "rule_set_62"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_87"
+            "remarks": "rule_set_62"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_87"
+            "remarks": "rule_set_62"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_maxrepeat=3",
-            "remarks": "rule_set_88"
+            "remarks": "rule_set_63"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_maxrepeat=3",
-            "remarks": "rule_set_88"
+            "remarks": "rule_set_63"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password same consecutive characters is configured (Automated)",
-            "remarks": "rule_set_88"
+            "remarks": "rule_set_63"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_88"
+            "remarks": "rule_set_63"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_minclass=4",
-            "remarks": "rule_set_89"
+            "remarks": "rule_set_64"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_minclass=4",
-            "remarks": "rule_set_89"
+            "remarks": "rule_set_64"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_89"
+            "remarks": "rule_set_64"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_89"
+            "remarks": "rule_set_64"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_minlen=14",
-            "remarks": "rule_set_90"
+            "remarks": "rule_set_65"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_minlen=14",
-            "remarks": "rule_set_90"
+            "remarks": "rule_set_65"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure minimum password length is configured (Automated)",
-            "remarks": "rule_set_90"
+            "remarks": "rule_set_65"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_90"
+            "remarks": "rule_set_65"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_ocredit=1",
-            "remarks": "rule_set_91"
+            "remarks": "rule_set_66"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_ocredit=1",
-            "remarks": "rule_set_91"
+            "remarks": "rule_set_66"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_91"
+            "remarks": "rule_set_66"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_91"
+            "remarks": "rule_set_66"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_remember=24",
-            "remarks": "rule_set_92"
+            "remarks": "rule_set_67"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_remember=24",
-            "remarks": "rule_set_92"
+            "remarks": "rule_set_67"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password history remember is configured (Automated)",
-            "remarks": "rule_set_92"
+            "remarks": "rule_set_67"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_92"
+            "remarks": "rule_set_67"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_ucredit=1",
-            "remarks": "rule_set_93"
+            "remarks": "rule_set_68"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_password_pam_ucredit=1",
-            "remarks": "rule_set_93"
+            "remarks": "rule_set_68"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure password complexity is configured (Manual)",
-            "remarks": "rule_set_93"
+            "remarks": "rule_set_68"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_93"
+            "remarks": "rule_set_68"
           },
           {
             "name": "Rule_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_sudo_timestamp_timeout=15_minutes",
-            "remarks": "rule_set_94"
+            "remarks": "rule_set_69"
           },
           {
             "name": "Check_Id",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "var_sudo_timestamp_timeout=15_minutes",
-            "remarks": "rule_set_94"
+            "remarks": "rule_set_69"
           },
           {
             "name": "Check_Description",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "Ensure sudo authentication timeout is configured correctly (Automated)",
-            "remarks": "rule_set_94"
+            "remarks": "rule_set_69"
           },
           {
             "name": "Target_Component",
             "ns": "https://oscal-compass/compliance-trestle/schemas/oscal/cd",
             "value": "NIST 800-53 Ubuntu Linux 24.04 LTS",
-            "remarks": "rule_set_94"
+            "remarks": "rule_set_69"
           }
         ]
       }
