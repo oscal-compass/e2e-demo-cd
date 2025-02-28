@@ -27,11 +27,18 @@ function github-branch-commit() {
         return 1
     fi
 
-    if ! git add assessment-results; then
+    if ! git add component-definitions; then
         err "failed to add modified files to git index"
         return 1
     fi
-    
+    if ! git add md_components; then
+        err "failed to add modified files to git index"
+        return 1
+    fi
+    if ! git add data; then
+        err "failed to add modified files to git index"
+        return 1
+    fi
     if [ -z "$(git status --porcelain)" ]; then 
         msg "Nothing to commit" 
         return 0 
@@ -57,7 +64,7 @@ function github-branch-commit() {
     
     local remote=origin
     if [[ $GITHUB_TOKEN ]]; then
-        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-audit-posture
+        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu
     fi
     if [[ $GIT_BRANCH != main ]] && [[ $GIT_BRANCH != develop ]]; then
         msg "not pushing updates to branch $GIT_BRANCH"
