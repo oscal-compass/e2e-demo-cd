@@ -26,12 +26,7 @@ function github-branch-commit() {
         err "failed to checkout $GIT_BRANCH"
         return 1
     fi
-
     if ! git add component-definitions; then
-        err "failed to add modified files to git index"
-        return 1
-    fi
-    if ! git add md_components; then
         err "failed to add modified files to git index"
         return 1
     fi
