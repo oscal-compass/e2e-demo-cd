@@ -147,3 +147,89 @@ class NistCdSoftwareHelper():
             components=[self.get_component()],
         )
         self.component_definition.oscal_write(pathlib.Path(self.ipath))
+
+
+class NistCdValidationHelper():
+    """NistCd validation helper."""
+
+    timestamp = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
+    ns = 'https://oscal-compass/compliance-trestle/schemas/oscal/cd'
+    prefix_rule_set = 'rule_set_'
+
+    def __init__(self, ipath: pathlib.Path, title: str, version: str, cis_yml_helper: CisYmlHelper) -> None:
+        """Initialize."""
+        self.ipath = ipath
+        os.makedirs(self.ipath.parent, exist_ok=True)
+        self.title = title
+        self.version = version
+        self.component_type = 'validation'
+        self.component_title = title
+        self.component_description = title
+        self.target_component = title
+        self.cis_yml_helper = cis_yml_helper
+        self.rule_text_list = []
+
+    def add_checks(self, rule_texts: List[str]) -> None:
+        """Add checks."""
+        for rule_text in rule_texts:
+            if rule_text not in self.rule_text_list:
+                self.rule_text_list.append(rule_text)
+
+    def get_checks(self) -> List[Property]:
+        """Get checks."""
+        props = []
+        rule_set_number_digits = len(self.rule_text_list) + 1
+        fill_size = int(log10(rule_set_number_digits)) + 1
+        for index, rule_text in enumerate(sorted(self.rule_text_list)):
+            rule_set_id = f'{NistCdValidationHelper.prefix_rule_set}{str(index).zfill(fill_size)}'
+            #
+            rule_id = rule_text
+            prop = Property(name='Rule_Id', value=rule_id, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id)
+            props.append(prop)
+            #
+            check_id = rule_text
+            prop = Property(name='Check_Id', value=check_id, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id)
+            props.append(prop)
+            #
+            check_description = self.cis_yml_helper.get_rule_description_for_rule_text(rule_text)
+            prop = Property(
+                name='Check_Description', value=check_description, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id
+            )
+            props.append(prop)
+            #
+            target_component = self.target_component
+            prop = Property(
+                name='Target_Component', value=target_component, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id
+            )
+            props.append(prop)
+        return props
+
+    def get_metadata(self) -> None:
+        """Metadata."""
+        metadata = Metadata(
+            title=self.title,
+            last_modified=NistCdValidationHelper.timestamp,
+            oscal_version=OSCAL_VERSION,
+            version=self.version,
+        )
+        return metadata
+
+    def get_component(self) -> DefinedComponent:
+        """Get component."""
+        component = DefinedComponent(
+            uuid=str(uuid.uuid4()),
+            type=self.component_type,
+            title=self.component_title,
+            description=self.component_description,
+            props=self.get_checks(),
+        )
+        return component
+
+    def write_component_definition(self) -> None:
+        """Write component definition."""
+        self.component_definition = ComponentDefinition(
+            uuid=str(uuid.uuid4()),
+            metadata=self.get_metadata(),
+            components=[self.get_component()],
+        )
+        self.component_definition.oscal_write(pathlib.Path(self.ipath))

@@ -23,6 +23,7 @@ from cis_to_nist_mapping_helper import CisToNistMappingHelper
 from cis_yml_helper import CisYmlHelper
 
 from nist_cd_helper import NistCdSoftwareHelper
+from nist_cd_helper import NistCdValidationHelper
 
 logging.basicConfig(
     level=logging.WARNING,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
@@ -41,12 +42,14 @@ class CisToNist():
         parser.add_argument('--cis-yml', required=True, help='CIS yml')
         parser.add_argument('--cis-cd', required=True, help='CIS component definition')
         parser.add_argument('--cis-nist-mapping', required=True, help='CIS to NIST mapping')
-        parser.add_argument('--nist-cd-software', required=True, help='NIST 800-53 component definition')
+        parser.add_argument('--nist-cd-software', required=True, help='NIST 800-53 software component definition')
+        parser.add_argument('--nist-cd-validation', required=True, help='NIST 800-53 validation component definition')
         parser.add_argument('--nist-catalog', required=True, help='NIST 800-53 catalog')
         self.args = parser.parse_args()
         self._init_cis_yml_helper()
         self._init_cis_cd_helper()
         self._init_nist_cd_software_helper()
+        self._init_nist_cd_validation_helper()
         self._init_cis_to_nist_mapping_helper()
 
     def _init_cis_yml_helper(self):
@@ -72,6 +75,18 @@ class CisToNist():
         source = self.args.nist_catalog
         self.nist_cd_software_helper = NistCdSoftwareHelper(ipath, title, version, source)
 
+    def _init_nist_cd_validation_helper(self):
+        """Initialize nist cd validation helper."""
+        ipath = pathlib.Path(self.args.nist_cd_validation)
+        title = self.args.nist_cd_software
+        title = title.replace('component-definitions', '')
+        title = title.replace('component-definition.json', '')
+        title = title.replace('/', '')
+        title = title.replace('_', ' ')
+        title = title.replace('800 53', '800-53')
+        version = self.cis_cd_helper.get_version()
+        self.nist_cd_validation_helper = NistCdValidationHelper(ipath, title, version, self.cis_yml_helper)
+
     def _init_cis_to_nist_mapping_helper(self):
         """Initialize cis_nist_mapping helper."""
         ipath = pathlib.Path(self.args.cis_nist_mapping)
@@ -85,17 +100,17 @@ class CisToNist():
         logger.debug(f'cis-to-nist controls map: {cis_to_nist_controls_map}')
         nist_to_cis_controls_map = self.cis_to_nist_mapping_helper.get_map_reverse(cis_cd_controls)
         logger.debug(f'nist-to-cis controls map: {nist_to_cis_controls_map}')
-        #
+        # create cds
         for nist_control in nist_to_cis_controls_map.keys():
             cis_control_list = nist_to_cis_controls_map[nist_control]
             for control_id in cis_control_list:
                 rule_ids = self.cis_cd_helper.get_rules_for_control(control_id)
                 rule_texts = self.cis_yml_helper.get_rule_texts_for_rule_id_list(rule_ids)
                 self.nist_cd_software_helper.add_control(nist_control, rule_texts)
-        #
+                self.nist_cd_validation_helper.add_checks(rule_texts)
         self.nist_cd_software_helper.add_rule_sets(self.cis_yml_helper)
-        #
         self.nist_cd_software_helper.write_component_definition()
+        self.nist_cd_validation_helper.write_component_definition()
 
 
 def main():
