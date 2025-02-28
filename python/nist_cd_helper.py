@@ -32,8 +32,8 @@ from trestle.oscal.component import DefinedComponent
 from trestle.oscal.component import ImplementedRequirement
 
 
-class NistCdHelper():
-    """NistCd helper."""
+class NistCdSoftwareHelper():
+    """NistCd software helper."""
 
     timestamp = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
     ns = 'https://oscal-compass/compliance-trestle/schemas/oscal/cd'
@@ -68,7 +68,7 @@ class NistCdHelper():
                 prop = Property(
                     name='Rule_Id',
                     value=rule_text,
-                    ns=NistCdHelper.ns,
+                    ns=NistCdSoftwareHelper.ns,
                 )
                 implemented_requirement.props.append(prop)
                 if rule_text not in self.rule_text_list:
@@ -80,28 +80,30 @@ class NistCdHelper():
         rule_set_number_digits = len(self.rule_text_list) + 1
         fill_size = int(log10(rule_set_number_digits)) + 1
         for index, rule_text in enumerate(self.rule_text_list):
-            rule_set_id = f'{NistCdHelper.prefix_rule_set}{str(index).zfill(fill_size)}'
+            rule_set_id = f'{NistCdSoftwareHelper.prefix_rule_set}{str(index).zfill(fill_size)}'
             #
-            prop = Property(name='Rule_Id', value=rule_text, ns=NistCdHelper.ns, remarks=rule_set_id)
+            prop = Property(name='Rule_Id', value=rule_text, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id)
             self.component_props.append(prop)
             #
             rule_description = cis_yml_helper.get_rule_description_for_rule_text(rule_text)
-            prop = Property(name='Rule_Description', value=rule_description, ns=NistCdHelper.ns, remarks=rule_set_id)
+            prop = Property(
+                name='Rule_Description', value=rule_description, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id
+            )
             self.component_props.append(prop)
             #
             rule_status = cis_yml_helper.get_rule_status_for_rule_text(rule_text)
-            prop = Property(name='Rule_Status', value=rule_status, ns=NistCdHelper.ns, remarks=rule_set_id)
+            prop = Property(name='Rule_Status', value=rule_status, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id)
             self.component_props.append(prop)
             #
             rule_levels = cis_yml_helper.get_rule_levels_for_rule_text(rule_text)
-            prop = Property(name='Rule_Levels', value=rule_levels, ns=NistCdHelper.ns, remarks=rule_set_id)
+            prop = Property(name='Rule_Levels', value=rule_levels, ns=NistCdSoftwareHelper.ns, remarks=rule_set_id)
             self.component_props.append(prop)
 
     def get_metadata(self) -> None:
         """Metadata."""
         metadata = Metadata(
             title=self.title,
-            last_modified=NistCdHelper.timestamp,
+            last_modified=NistCdSoftwareHelper.timestamp,
             oscal_version=OSCAL_VERSION,
             version=self.version,
         )
