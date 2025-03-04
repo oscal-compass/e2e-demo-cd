@@ -35,8 +35,11 @@ class CisYmlHelper():
                 continue
             rule_texts = control.get('rules', '')
             for rule_text in rule_texts:
-                if rule_text not in rval:
-                    rval.append(rule_text)
+                if rule_text in rval:
+                    continue
+                if '=' in rule_text:
+                    continue
+                rval.append(rule_text)
         return rval
 
     def get_rule_texts_for_rule_id_list(self, rule_id_list: List[str]):
@@ -45,8 +48,11 @@ class CisYmlHelper():
         for rule_id in rule_id_list:
             rule_texts = self.get_rule_texts_for_rule_id(rule_id)
             for rule_text in rule_texts:
-                if rule_text not in rval:
-                    rval.append(rule_text)
+                if rule_text in rval:
+                    continue
+                if '=' in rule_text:
+                    continue
+                rval.append(rule_text)
         return sorted(rval)
 
     def get_rule_description_for_rule_text(self, rule_text: str) -> str:
