@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "510b2800-33d0-4769-b681-4a4f176cacfe",
+    "uuid": "d61f6cd1-548c-4e06-a54d-65438a0c8c4e",
     "metadata": {
       "title": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet_v1.0.0",
-      "last-modified": "2025-02-28T19:28:22+00:00",
+      "last-modified": "2025-03-04T20:56:29+00:00",
       "version": "1.0.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
-        "uuid": "6fa7bbb9-ef3b-4be5-a7e3-44a638db29b5",
+        "uuid": "c9c830f3-cfa6-4cb8-ac40-1b2b2cfa6e6c",
         "type": "software",
         "title": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet",
         "description": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet",
@@ -9479,12 +9479,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "20c2306e-e229-495e-a496-f323015f3e10",
+            "uuid": "5423f6f9-d227-4900-8f4f-0bd45009c8ba",
             "source": "catalogs/CIS_controls_v8/catalog.json",
             "description": "CIS catalog v8",
             "implemented-requirements": [
               {
-                "uuid": "98eeb864-69b2-4ae5-b47e-f42586aa280f",
+                "uuid": "5722af5e-0016-4d9e-b960-f12c54e03cda",
                 "control-id": "cisc-3.3",
                 "description": "",
                 "props": [
@@ -9556,7 +9556,7 @@
                 ]
               },
               {
-                "uuid": "8e7e3de5-aec5-4cb9-87e4-ca06f3ffafb9",
+                "uuid": "1f3faa38-af72-4cf3-a3b7-11390fad7196",
                 "control-id": "cisc-3.10",
                 "description": "",
                 "props": [
@@ -9578,7 +9578,7 @@
                 ]
               },
               {
-                "uuid": "101fbe51-225d-47fd-92a2-4f4628d2686f",
+                "uuid": "5374c804-ab20-41f5-9ffc-7c07bb4042b3",
                 "control-id": "cisc-4.8",
                 "description": "",
                 "props": [
@@ -9590,7 +9590,7 @@
                 ]
               },
               {
-                "uuid": "039cc51f-e7aa-400e-b46b-59bdcb6d76ee",
+                "uuid": "c22c1817-9732-420c-a623-2d49800db256",
                 "control-id": "cisc-5.2",
                 "description": "",
                 "props": [
@@ -9707,7 +9707,7 @@
                 ]
               },
               {
-                "uuid": "645b6fa8-ee15-4a7f-8111-593b5b67731f",
+                "uuid": "c3f9ceeb-fcf5-484c-8e6f-27f22b99e7be",
                 "control-id": "cisc-8.2",
                 "description": "",
                 "props": [
@@ -9719,7 +9719,7 @@
                 ]
               },
               {
-                "uuid": "f2d305ae-bbaf-4648-ab19-915bef21a78a",
+                "uuid": "53e461cb-a9cd-401d-8f8e-cf3bff512c48",
                 "control-id": "cisc-8.5",
                 "description": "",
                 "props": [
@@ -9736,7 +9736,7 @@
                 ]
               },
               {
-                "uuid": "117ef91f-7e76-494e-95d6-7272afb4fe9b",
+                "uuid": "8f74bfea-aec7-4b29-b795-02792ce41ca3",
                 "control-id": "cisc-5.4",
                 "description": "",
                 "props": [
@@ -9773,7 +9773,7 @@
                 ]
               },
               {
-                "uuid": "0f9fd0b1-3e39-4e11-ad06-392b1ff3f1f5",
+                "uuid": "4b7d887c-6b61-4d33-bac1-ac306429de73",
                 "control-id": "cisc-6.2",
                 "description": "",
                 "props": [
@@ -9800,7 +9800,7 @@
                 ]
               },
               {
-                "uuid": "40e1e9e2-9d87-401f-87cf-554b46701f53",
+                "uuid": "ce38ec27-13e8-4f8b-8cd0-3ca319329760",
                 "control-id": "cisc-3.11",
                 "description": "",
                 "props": [
@@ -9827,7 +9827,7 @@
                 ]
               },
               {
-                "uuid": "c660289d-94b1-4311-8ac6-6b7dc5fa5c60",
+                "uuid": "5fae38c7-f4ca-481c-8e70-b3e0ec04ac41",
                 "control-id": "cisc-4.1",
                 "description": "",
                 "props": [
@@ -9839,7 +9839,7 @@
                 ]
               },
               {
-                "uuid": "9d97d566-6b07-457f-9447-959bc4488353",
+                "uuid": "251c7b8e-126f-4812-bd2c-9d8931525999",
                 "control-id": "cisc-4.3",
                 "description": "",
                 "props": [
