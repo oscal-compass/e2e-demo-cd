@@ -59,7 +59,7 @@ function github-branch-commit() {
     
     local remote=origin
     if [[ $GITHUB_TOKEN ]]; then
-        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu
+        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-cd-ubuntu
     fi
     if [[ $GIT_BRANCH != main ]] && [[ $GIT_BRANCH != develop ]]; then
         msg "not pushing updates to branch $GIT_BRANCH"
