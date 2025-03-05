@@ -31,6 +31,7 @@ from trestle.tasks.csv_to_oscal_cd import PROFILE_DESCRIPTION
 from trestle.tasks.csv_to_oscal_cd import PROFILE_SOURCE
 from trestle.tasks.csv_to_oscal_cd import RULE_DESCRIPTION
 from trestle.tasks.csv_to_oscal_cd import RULE_ID
+from trestle.tasks.csv_to_oscal_cd import TARGET_COMPONENT
 
 optional = f'{HEADER_DECORATION_CHAR}'
 required = f'{HEADER_DECORATION_CHAR}{HEADER_DECORATION_CHAR}'
@@ -45,6 +46,7 @@ h1_control_id_list = f'{required}{CONTROL_ID_LIST}'
 h1_namespace = f'{required}{NAMESPACE}'
 h1_check_id = f'{optional}{CHECK_ID}'
 h1_check_description = f'{optional}{CHECK_DESCRIPTION}'
+h1_target_component = f'{optional}{TARGET_COMPONENT}'
 
 h2_component_title = 'A human readable name for the component.'
 h2_component_description = 'A description of the component including information about its function.'
@@ -57,6 +59,7 @@ h2_control_id_list = 'A list of textual labels that uniquely identify the contro
 h2_namespace = 'A namespace qualifying the property\'s name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept.'
 h2_check_id = 'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.'
 h2_check_description = 'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.'
+h2_target_component = 'The name of the target component.'
 
 row_h1s = [
     h1_component_title,
@@ -93,7 +96,8 @@ row_h1v = [
     h1_control_id_list,
     h1_namespace,
     h1_check_id,
-    h1_check_description
+    h1_check_description,
+    h1_target_component
 ]
 
 row_h2v = [
@@ -107,7 +111,8 @@ row_h2v = [
     h2_control_id_list,
     h2_namespace,
     h2_check_id,
-    h2_check_description
+    h2_check_description,
+    h2_target_component
 ]
 
 
@@ -119,8 +124,6 @@ class _NistCsvHelper():
         ipath: pathlib.Path,
         component_title: str,
         component_description: str,
-        profile_source: str,
-        profile_description: str
     ) -> None:
         """Initialize."""
         self.ipath = ipath
@@ -129,8 +132,6 @@ class _NistCsvHelper():
         self.component_title = component_title
         self.component_description = component_description
         self.component_type = '?'
-        self.profile_source = profile_source
-        self.profile_description = profile_description
         self.namespace = 'https://oscal-compass/compliance-trestle/schemas/oscal/cd'
 
     def write_csv(self) -> None:
@@ -154,8 +155,10 @@ class NistCsvSoftwareHelper(_NistCsvHelper):
     ) -> None:
         """Initialize."""
         _NistCsvHelper.__init__(
-            self, ipath, component_title, component_description, profile_source, profile_description
+            self, ipath, component_title, component_description
         )
+        self.profile_source = profile_source
+        self.profile_description = profile_description
         self.component_type = 'software'
         self.rows.append(row_h1s)
         self.rows.append(row_h2s)
@@ -199,13 +202,15 @@ class NistCsvValidationHelper(_NistCsvHelper):
         ipath: pathlib.Path,
         component_title: str,
         component_description: str,
-        profile_source: str,
-        profile_description: str
+        check_prefix: str,
+        target_component: str
     ) -> None:
         """Initialize."""
         _NistCsvHelper.__init__(
-            self, ipath, component_title, component_description, profile_source, profile_description
+            self, ipath, component_title, component_description
         )
+        self.check_prefix = check_prefix
+        self.target_component = target_component
         self.component_type = 'validation'
         self.rows.append(row_h1v)
         self.rows.append(row_h2v)
@@ -230,13 +235,14 @@ class NistCsvValidationHelper(_NistCsvHelper):
                 self.component_description,
                 self.component_type,
                 rule_id,
-                rule_description,
-                self.profile_source,
-                self.profile_description,
-                control_id_list,
+                '',
+                '',
+                '',
+                '',
                 self.namespace,
-                check_id,
-                check_description
+                f'{self.check_prefix}{check_id}',
+                f'{self.check_prefix}{check_description}',
+                self.target_component
             ]
             self.rows.append(row)
         self.write_csv()

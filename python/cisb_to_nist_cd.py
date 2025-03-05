@@ -64,10 +64,14 @@ class CisToNist():
             help='trestle validation csv component description',
             default=None
         )
+        parser.add_argument(
+            '--nist-csv-validation-check-prefix',
+            required=True,
+            help='trestle validation csv check prefix'
+        )
         #
         parser.add_argument('--nist-csv-profile-source', required=True, help='trestle csv profile source')
         parser.add_argument('--nist-csv-profile-description', required=True, help='trestle csv profile description')
-        parser.add_argument('--nist-catalog', required=True, help='NIST 800-53 catalog')
         self.args = parser.parse_args()
         self._init_cis_yml_helper()
         self._init_cis_cd_helper()
@@ -89,9 +93,11 @@ class CisToNist():
         """Initialize nist csv software helper."""
         ipath = pathlib.Path(self.args.nist_csv_software)
         component_title = self.args.nist_csv_software_component_title
+        component_title = component_title.replace(' ', '_')
         component_description = self.args.nist_csv_software_component_description
         if not component_description:
             component_description = component_title
+        component_description = component_description.replace('_', ' ')
         profile_source = self.args.nist_csv_profile_source
         profile_description = self.args.nist_csv_profile_description
         self.nist_csv_software_helper = NistCsvSoftwareHelper(
@@ -102,13 +108,16 @@ class CisToNist():
         """Initialize nist csv validation helper."""
         ipath = pathlib.Path(self.args.nist_csv_validation)
         component_title = self.args.nist_csv_validation_component_title
+        component_title = component_title.replace(' ', '_')
         component_description = self.args.nist_csv_validation_component_description
         if not component_description:
             component_description = component_title
-        profile_source = self.args.nist_csv_profile_source
-        profile_description = self.args.nist_csv_profile_description
+        component_description = component_description.replace('_', ' ')
+        check_prefix = self.args.nist_csv_validation_check_prefix
+        target_component = self.args.nist_csv_software_component_title
+        target_component = target_component.replace(' ', '_')
         self.nist_csv_validation_helper = NistCsvValidationHelper(
-            ipath, component_title, component_description, profile_source, profile_description
+            ipath, component_title, component_description, check_prefix, target_component
         )
 
     def _init_cis_to_nist_mapping_helper(self):
