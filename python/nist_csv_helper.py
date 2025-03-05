@@ -48,18 +48,18 @@ h1_check_id = f'{optional}{CHECK_ID}'
 h1_check_description = f'{optional}{CHECK_DESCRIPTION}'
 h1_target_component = f'{optional}{TARGET_COMPONENT}'
 
-h2_component_title = 'A human readable name for the component.'
-h2_component_description = 'A description of the component including information about its function.'
-h2_component_type = 'A category describing the purpose of the component. ALLOWED VALUES interconnection:software:hardware:service:physical:process-procedure:plan:guidance:standard:validation.'
-h2_rule_id = 'A textual label that uniquely identifies a policy (desired state) that can be used to reference it elsewhere in this or other documents.'
-h2_rule_description = 'A description of the policy (desired state) including information about its purpose and scope.'
-h2_profile_source = 'A URL reference to the source catalog or profile for which this component is implementing controls for. A profile designates a selection and configuration of controls from one or more catalogs.'
-h2_profile_description = 'A description of the profile.'
-h2_control_id_list = 'A list of textual labels that uniquely identify the controls or statements that the component implements.'
-h2_namespace = 'A namespace qualifying the property\'s name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept.'
-h2_check_id = 'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.'
-h2_check_description = 'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.'
-h2_target_component = 'The name of the target component.'
+h2_component_title = 'A human readable name for the component.'  # noqa: E501
+h2_component_description = 'A description of the component including information about its function.'  # noqa: E501
+h2_component_type = 'A category describing the purpose of the component. ALLOWED VALUES interconnection:software:hardware:service:physical:process-procedure:plan:guidance:standard:validation.'  # noqa: E501
+h2_rule_id = 'A textual label that uniquely identifies a policy (desired state) that can be used to reference it elsewhere in this or other documents.'  # noqa: E501
+h2_rule_description = 'A description of the policy (desired state) including information about its purpose and scope.'  # noqa: E501
+h2_profile_source = 'A URL reference to the source catalog or profile for which this component is implementing controls for. A profile designates a selection and configuration of controls from one or more catalogs.'  # noqa: E501
+h2_profile_description = 'A description of the profile.'  # noqa: E501
+h2_control_id_list = 'A list of textual labels that uniquely identify the controls or statements that the component implements.'  # noqa: E501
+h2_namespace = 'A namespace qualifying the property\'s name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept.'  # noqa: E501
+h2_check_id = 'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.'  # noqa: E501
+h2_check_description = 'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.'  # noqa: E501
+h2_target_component = 'The name of the target component.'  # noqa: E501
 
 row_h1s = [
     h1_component_title,
@@ -154,9 +154,7 @@ class NistCsvSoftwareHelper(_NistCsvHelper):
         profile_description: str
     ) -> None:
         """Initialize."""
-        _NistCsvHelper.__init__(
-            self, ipath, component_title, component_description
-        )
+        _NistCsvHelper.__init__(self, ipath, component_title, component_description)
         self.profile_source = profile_source
         self.profile_description = profile_description
         self.component_type = 'software'
@@ -206,9 +204,7 @@ class NistCsvValidationHelper(_NistCsvHelper):
         target_component: str
     ) -> None:
         """Initialize."""
-        _NistCsvHelper.__init__(
-            self, ipath, component_title, component_description
-        )
+        _NistCsvHelper.__init__(self, ipath, component_title, component_description)
         self.check_prefix = check_prefix
         self.target_component = target_component
         self.component_type = 'validation'
@@ -224,9 +220,12 @@ class NistCsvValidationHelper(_NistCsvHelper):
 
     def generate_csv(self):
         """Generate csv."""
+        rule_description = ''
+        profile_source = ''
+        profile_description = ''
+        control_id_list = ''
         for key in self._map.keys():
             rule_id = key
-            rule_description = key
             check_id = key
             check_description = key
             control_id_list = ' '.join(self._map[key])
@@ -235,10 +234,10 @@ class NistCsvValidationHelper(_NistCsvHelper):
                 self.component_description,
                 self.component_type,
                 rule_id,
-                '',
-                '',
-                '',
-                '',
+                rule_description,
+                profile_source,
+                profile_description,
+                control_id_list,
                 self.namespace,
                 f'{self.check_prefix}{check_id}',
                 f'{self.check_prefix}{check_description}',

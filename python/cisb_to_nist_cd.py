@@ -65,9 +65,7 @@ class CisToNist():
             default=None
         )
         parser.add_argument(
-            '--nist-csv-validation-check-prefix',
-            required=True,
-            help='trestle validation csv check prefix'
+            '--nist-csv-validation-check-prefix', required=True, help='trestle validation csv check prefix'
         )
         #
         parser.add_argument('--nist-csv-profile-source', required=True, help='trestle csv profile source')
