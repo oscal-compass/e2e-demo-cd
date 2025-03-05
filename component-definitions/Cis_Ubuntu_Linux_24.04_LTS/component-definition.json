@@ -1,15 +1,27 @@
 {
   "component-definition": {
+<<<<<<< HEAD
     "uuid": "e5b0e7c0-37ac-4f66-86ae-28c9feab668f",
+=======
+    "uuid": "7f750f77-6f2d-4609-bb85-c5ad8f8379f0",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
     "metadata": {
       "title": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet_v1.0.0",
+<<<<<<< HEAD
       "last-modified": "2025-03-05T14:59:49+00:00",
+=======
+      "last-modified": "2025-03-04T20:58:23+00:00",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
       "version": "1.0.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
+<<<<<<< HEAD
         "uuid": "1a176617-aafd-469c-a60d-eb9f1246c0a2",
+=======
+        "uuid": "5b629f26-3eff-481c-9221-7e621332932e",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
         "type": "software",
         "title": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet",
         "description": "CIS_Ubuntu_Linux_24.04_LTS_Benchmark_snippet",
@@ -9479,12 +9491,20 @@
         ],
         "control-implementations": [
           {
+<<<<<<< HEAD
             "uuid": "d310fca0-7dd4-4545-9599-391f0000c4d7",
+=======
+            "uuid": "ac22b344-1d10-4fd4-84d5-e862c5eee94c",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
             "source": "catalogs/CIS_controls_v8/catalog.json",
             "description": "CIS catalog v8",
             "implemented-requirements": [
               {
+<<<<<<< HEAD
                 "uuid": "6c7e288e-ffe6-4e7c-a92f-494f1545cca3",
+=======
+                "uuid": "fb84c49b-4b47-45e4-a064-5da858a47ef1",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-3.3",
                 "description": "",
                 "props": [
@@ -9556,7 +9576,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "bd1dbeb5-e2f5-4331-b9d2-2e8e37c07b20",
+=======
+                "uuid": "47830c01-72f0-4449-a087-c1e617c8f531",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-3.10",
                 "description": "",
                 "props": [
@@ -9578,7 +9602,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "5d2a3182-d964-46f5-918b-dc6df80fbcad",
+=======
+                "uuid": "bb136d3c-73c2-4095-9f72-cfb66405b346",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-4.8",
                 "description": "",
                 "props": [
@@ -9590,7 +9618,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "25f2dbbd-2153-4f94-899b-76cb7eeaaeec",
+=======
+                "uuid": "2177b9eb-2a41-4cda-ab3f-da159fcdcafc",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-5.2",
                 "description": "",
                 "props": [
@@ -9707,7 +9739,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "9d55f020-bea8-4ffc-89be-1cb60bf36994",
+=======
+                "uuid": "bb5bcab6-206c-418e-b4ad-e2ce1248af28",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-8.2",
                 "description": "",
                 "props": [
@@ -9719,7 +9755,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "f4bc39b1-8c1f-4c85-9752-0e0bfe03f6f3",
+=======
+                "uuid": "98a9b042-e8b6-46b7-8463-188ec9059ca5",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-8.5",
                 "description": "",
                 "props": [
@@ -9736,7 +9776,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "e4288568-0047-4bc5-b86b-91e29943f510",
+=======
+                "uuid": "171639b2-0319-4c2f-9fc5-1ca5b1ec3129",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-5.4",
                 "description": "",
                 "props": [
@@ -9773,7 +9817,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "db5d37aa-0f81-4e10-acff-ac9581d90e49",
+=======
+                "uuid": "33c42205-443e-4345-80fd-9dba644bb031",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-6.2",
                 "description": "",
                 "props": [
@@ -9800,7 +9848,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "fd319cdb-29ad-4cef-bd5a-af360a641381",
+=======
+                "uuid": "3e1480da-b8ae-4f6e-abf7-5329c0578020",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-3.11",
                 "description": "",
                 "props": [
@@ -9827,7 +9879,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "b5c580c6-9fac-4dec-92be-f243e51652b1",
+=======
+                "uuid": "600510c0-ba94-4098-9ba4-c71c59085052",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-4.1",
                 "description": "",
                 "props": [
@@ -9839,7 +9895,11 @@
                 ]
               },
               {
+<<<<<<< HEAD
                 "uuid": "6116e1b0-6f36-4946-a78d-31177d816a65",
+=======
+                "uuid": "c4caa4f1-e376-4a6d-bec0-863b1f431450",
+>>>>>>> branch 'develop' of https://github.com/oscal-compass/e2e-demo-cac-cd-nist-ubuntu.git
                 "control-id": "cisc-4.3",
                 "description": "",
                 "props": [
