@@ -18,6 +18,9 @@ config2=$"\.config$"
 catalog1=$"^catalogs/"
 catalog2=$"\.json$"
 
+profile1=$"^profiles/"
+profile2=$"\.json$"
+
 for val in ${CHANGES[@]} ; do
   if [[ $val =~ $xlsx1 && $val =~ $xlsx2 ]]; then
     src_changed=true
@@ -32,6 +35,10 @@ for val in ${CHANGES[@]} ; do
   fi
   
   if [[ $val =~ $catalog1 && $val =~ $catalog2 ]]; then
+    src_changed=true
+  fi
+  
+  if [[ $val =~ $profile1 && $val =~ $profile2 ]]; then
     src_changed=true
   fi
 done
