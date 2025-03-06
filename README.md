@@ -5,7 +5,7 @@ The [demo overview](https://github.com/oscal-compass/e2e-demo).
 
 1. Input: It was initialized with OSCAL catalog.json, profile.json, [Ubuntu yml](https://github.com/ComplianceAsCode/content/blob/master/controls/cis_ubuntu2404.yml) from ComplianceAsCode, and control selections specified in spread sheets.
 
-2. Processing: Changes to either the any of the input files will cause regeneration of the `software` and `validation` component definitions.
+2. Processing: Changes to any of the input files will cause regeneration of the `software` and `validation` component definitions.
 
     - [type=software Component Definition](component-definitions/Ubuntu_Linux_24.04_LTS/component-definition.json)
     - [type=validation Component Definition](component-definitions/oscap/component-definition.json)
