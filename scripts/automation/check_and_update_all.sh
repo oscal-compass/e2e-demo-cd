@@ -2,49 +2,50 @@
 
 CHANGES=`git diff-tree --no-commit-id --name-only -r HEAD`
 
-md_changed=false
-ssp_changed=false
-cd_changed=false
+src_changed=false
 
-md1=$"^md_ssp/"
-md2=$"\.md$"
+# bash regex does not support lazy match, so need to use two patterns to match before and after the control id
 
-ssp1=$"^ssp/"
-ssp2=$"\.json$"
+xlsx1=$"^data/"
+xlsx2=$"\.xlsx$"
 
-cd1=$"^component-definitions/"
-cd2=$"\.json$"
+yml1=$"^data/"
+yml2=$"\.yml$"
+
+config1=$"^data/"
+config2=$"\.config$"
+
+catalog1=$"^catalogs/"
+catalog2=$"\.json$"
+
+profile1=$"^profiles/"
+profile2=$"\.json$"
 
 for val in ${CHANGES[@]} ; do
-  if [[ $val =~ $md1 && $val =~ $md2 ]]; then
-    md_changed=true
+  if [[ $val =~ $xlsx1 && $val =~ $xlsx2 ]]; then
+    src_changed=true
   fi
 
-  if [[ $val =~ $ssp1 && $val =~ $ssp2 ]]; then
-    ssp_changed=true
+  if [[ $val =~ $yml1 && $val =~ $yml2 ]]; then
+    src_changed=true
   fi
-
-  if [[ $val =~ $cd1 && $val =~ $cd2 ]]; then
-    cd_changed=true
+  
+  if [[ $val =~ $config1 && $val =~ $config2 ]]; then
+    src_changed=true
+  fi
+  
+  if [[ $val =~ $catalog1 && $val =~ $catalog2 ]]; then
+    src_changed=true
+  fi
+  
+  if [[ $val =~ $profile1 && $val =~ $profile2 ]]; then
+    src_changed=true
   fi
 done
 
-if [[ $cd_changed = true ]]; then
-    echo "Component definitions json file(s) were changed, regenerating ssp markdowns..."
-    ./scripts/automation/generate_ssp.sh
+if [[ $src_changed = true ]]; then
+    echo "Source file(s) were changed regenerating component definitions..."
+    ./scripts/automation/regenerate_components.sh
 fi
 
-if [[ $ssp_changed = true ]]; then
-    echo "SSP json file(s) were changed, regenerating ssp markdowns..."
-    ./scripts/automation/generate_ssp.sh
-fi
-
-
-if [[ $md_changed = true ]]; then
-    echo "Md file(s) were changed, assembling markdowns to SSP json..."
-    ./scripts/automation/assemble_ssp.sh
-fi
-
-
-
-echo "$md_changed $cd_changed $ssp_changed"
+echo "$src_changed"

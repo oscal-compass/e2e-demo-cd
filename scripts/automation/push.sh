@@ -26,12 +26,11 @@ function github-branch-commit() {
         err "failed to checkout $GIT_BRANCH"
         return 1
     fi
-
-    if ! git add system-security-plans; then
+    if ! git add component-definitions; then
         err "failed to add modified files to git index"
         return 1
     fi
-    if ! git add md_ssp; then
+    if ! git add data; then
         err "failed to add modified files to git index"
         return 1
     fi
@@ -59,8 +58,8 @@ function github-branch-commit() {
     fi
     
     local remote=origin
-    if [[ $GIT_TOKEN ]]; then
-        remote=https://$GIT_TOKEN@github.com/ComplianceAsCode/ocp-oscal-ssp
+    if [[ $GITHUB_TOKEN ]]; then
+        remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-cd-ubuntu
     fi
     if [[ $GIT_BRANCH != main ]] && [[ $GIT_BRANCH != develop ]]; then
         msg "not pushing updates to branch $GIT_BRANCH"
