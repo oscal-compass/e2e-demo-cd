@@ -37,14 +37,14 @@ jobs:
     - name: Clone downstream repo
       uses: actions/checkout@v4
       with:
-        repository: oscal-compass/e2e-demo-cac-ssp
-        path: './e2e-demo-cac-ssp'
-        token: ${{ secrets.GITHUB_TOKEN }}
+        repository: oscal-compass/e2e-demo-ssp
+        path: './e2e-demo-ssp'
+        token: ${{ secrets.PUSH_TOKEN }}
         fetch-depth: 0
     - name: Update ssp
       run: bash scripts/automation/update_ssp.sh
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.PUSH_TOKEN }}
   merge-main-to-develop:
     name: Merge main to develop
     runs-on: ubuntu-latest
