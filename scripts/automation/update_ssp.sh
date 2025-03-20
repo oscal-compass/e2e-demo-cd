@@ -21,7 +21,7 @@ else
      echo "Nothing to commit" 
   else
      git commit -m "$COMMIT_TITLE"
-     remote=https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-ssp
+     remote=https://$GH_TOKEN@github.com/oscal-compass/e2e-demo-ssp
      git push -u "$remote" "cd_autoupdate_$GITHUB_RUN_ID"
      echo $COMMIT_BODY
      gh pr create -t "$COMMIT_TITLE" -b "$COMMIT_BODY" -B "develop" -H "cd_autoupdate_$GITHUB_RUN_ID" 
