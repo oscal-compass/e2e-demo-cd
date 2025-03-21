@@ -4,7 +4,7 @@ export COMMIT_TITLE="chore: Component definitions automatic update."
 export COMMIT_BODY="Sync components with ocp-oscal-ssp repo"
 git config --global user.email "automation@example.com"
 git config --global user.name "AutomationBot" 
-cd ocp-oscal-ssp
+cd e2e-demo-ssp
 git checkout -b "cd_autoupdate_$GITHUB_RUN_ID"
 cp -r ../catalogs .
 cp -r ../profiles . 
@@ -12,8 +12,7 @@ cp -r ../component-definitions .
  
 if [ -z "$(git status --porcelain)" ]; then 
   echo "Nothing to commit" 
-else 
-  git diff
+else
   git add component-definitions
   git add profiles
   git add catalogs  
