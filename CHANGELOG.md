@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2025-03-21)
+### Fix
+* Create a release ([`e70eadf`](https://github.com/oscal-compass/e2e-demo-cd/commit/e70eadf3bef2219c93bd966cf2b27e305e85f8e4))
+* Update script ([`41c1f3d`](https://github.com/oscal-compass/e2e-demo-cd/commit/41c1f3dd220859061da633a574d519dd607eb626))
+
 ## v0.2.0 (2025-03-21)
 ### Feature
 * Update ssp with the latest fix ([#3](https://github.com/oscal-compass/e2e-demo-cd/issues/3)) ([`0197cd1`](https://github.com/oscal-compass/e2e-demo-cd/commit/0197cd1aa5bb5bb8e15756542808ddf70290b3e3))

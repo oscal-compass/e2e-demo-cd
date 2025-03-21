@@ -3,8 +3,8 @@
     "uuid": "d062a6b0-aa04-4d2a-adf7-a383bb5d0c4c",
     "metadata": {
       "title": "Component definition for Ubuntu_Linux_24.04_LTS",
-      "last-modified": "2025-03-21T20:45:42.126920+00:00",
-      "version": "0.2.0",
+      "last-modified": "2025-03-21T21:08:26.110600+00:00",
+      "version": "0.2.1",
       "oscal-version": "1.1.3"
     },
     "components": []
