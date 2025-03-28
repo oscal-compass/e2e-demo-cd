@@ -1,0 +1,5 @@
+
+push-remote: https://$GITHUB_TOKEN@github.com/oscal-compass/e2e-demo-cd
+
+update-ssp-folder: e2e-demo-ssp
+update-ssp-remote: https://x-access-token:$GH_TOKEN@github.com/oscal-compass/e2e-demo-ssp
