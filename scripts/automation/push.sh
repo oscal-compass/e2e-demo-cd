@@ -34,6 +34,10 @@ function github-branch-commit() {
         err "failed to add modified files to git index"
         return 1
     fi
+    if ! git add md_components; then
+        err "failed to add modified files to git index"
+        return 1
+    fi
     if [ -z "$(git status --porcelain)" ]; then 
         msg "Nothing to commit" 
         return 0 
