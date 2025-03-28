@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "48d1d8bc-4481-4739-8f0e-19cf267c7f72",
+    "uuid": "312d36f6-9e14-4a83-987f-d25a2efa833d",
     "metadata": {
       "title": "Component definition for Ubuntu_Linux_24.04_LTS",
-      "last-modified": "2025-03-28T18:36:04+00:00",
+      "last-modified": "2025-03-28T18:42:29+00:00",
       "version": "V1.0",
       "oscal-version": "1.1.3"
     },
     "components": [
       {
-        "uuid": "27f401af-8804-4ea6-9176-93301273f444",
+        "uuid": "60fdb829-08b4-4812-90e6-1e4f73e1a9e3",
         "type": "validation",
         "title": "oscap",
         "description": "oscap",
