@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export COMMIT_TITLE="chore: Component definitions automatic update."
-export COMMIT_BODY="Sync components with ocp-oscal-ssp repo"
+export COMMIT_BODY="Sync components with oscal-ssp repo"
 git config --global user.email "automation@example.com"
 git config --global user.name "AutomationBot" 
 cd $(python ./scripts/automation/automation_config.py "update-ssp-folder")
