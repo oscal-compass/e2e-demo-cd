@@ -18,7 +18,7 @@ Demo for this repo:
 
 - Show changes to spread sheet (delete control, re-add control) are incorporated into component-definition.json files
 
------
+______________________________________________________________________
 
 We are a Cloud Native Computing Foundation sandbox project.
 
